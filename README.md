@@ -6,11 +6,8 @@ A responsive landing page clone of [enterprise.accredian.com](https://enterprise
 
 ## Live Demo
 
-🔗 [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app) ← replace with your link
+🔗 [your-vercel-url.vercel.app](https://accredian-assignment-dna340ie7-asim-rupanis-projects.vercel.app/) 
 
-## GitHub Repository
-
-🔗 [github.com/your-username/accredian-enterprise](https://github.com/your-username/accredian-enterprise) ← replace
 
 ---
 

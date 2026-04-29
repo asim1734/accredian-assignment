@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { domainOptions, deliveryModeOptions } from "@/lib/data";
+import enquireImage from "@/assests/Accredian_files/Enquireimage.png";
 
 type FormState = {
   name: string;
@@ -165,11 +167,16 @@ export default function EnquireModal() {
           ×
         </button>
         <div className="grid min-h-[560px] lg:grid-cols-[1fr_1.1fr]">
-          <div className="hidden h-full bg-slate-100 lg:block">
-            <div className="flex h-full items-center justify-center">
-              <div className="flex h-full w-full items-center justify-center bg-slate-200 text-sm font-semibold text-slate-500">
-                Image Placeholder
-              </div>
+          <div className="hidden h-full lg:block">
+            <div className="relative h-full w-full">
+              <Image
+                src={enquireImage}
+                alt="Enquire form"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
           <div className="p-8">
