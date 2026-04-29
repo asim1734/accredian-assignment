@@ -1,8 +1,11 @@
 import Image from "next/image";
+import type React from "react";
 
 import teamImage from "@/assests/Accredian_files/imagehuman.png";
 
-const groups = [
+type GroupIcon = "monitor" | "x" | "cap" | "briefcase";
+
+const groups: { title: string; description: string; icon: GroupIcon }[] = [
   {
     title: "Tech Professionals",
     description: "Enhance expertise, embrace tech, drive innovation.",
@@ -27,7 +30,7 @@ const groups = [
 
 const iconClass = "h-10 w-10 text-white";
 
-const icons = {
+const icons: Record<GroupIcon, React.ReactNode> = {
   monitor: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className={iconClass}>
       <rect x="3" y="4" width="18" height="12" rx="2" strokeWidth="1.5" />

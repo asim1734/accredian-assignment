@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { testimonials } from "@/lib/data";
 
@@ -8,7 +8,7 @@ import adpLogo from "@/assests/Accredian_files/adp.svg";
 import bayerLogo from "@/assests/Accredian_files/bayer.svg";
 import relianceLogo from "@/assests/Accredian_files/rel.png";
 
-const logoMap: Record<string, string> = {
+const logoMap: Record<string, StaticImageData> = {
   ADP: adpLogo,
   Bayer: bayerLogo,
   Reliance: relianceLogo,
